@@ -1,4 +1,6 @@
 require("@matterlabs/hardhat-zksync-solc");
+require("@nomiclabs/hardhat-waffle");
+
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -24,6 +26,9 @@ module.exports = {
       chainId: 324,
       zksync: true,
     },
+    hardhat: {
+      chainId: 1337
+    }
   },
   paths: {
     artifacts: "./artifacts-zk",
